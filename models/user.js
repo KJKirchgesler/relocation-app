@@ -22,7 +22,14 @@
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
     // Giving the User model a name of type STRING
+    // email: {
+    //   name: DataTypes.STRING
+    //   },
+    // password: {
+    //   type: DataTypes.STRING
+    //   }
     name: DataTypes.STRING
+    
   });
 
   User.associate = function(models) {
