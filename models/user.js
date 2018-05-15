@@ -17,9 +17,9 @@ var User = connection.define("user", {
 });
 
 // Syncs with DB
-/*User.sync();
+User.sync();
 
- */
+ 
 
 /*connection.sync().then(function() {
     User.create( {
@@ -28,5 +28,5 @@ var User = connection.define("user", {
     });
   }); */
 
-/* Makes the UserSequelizeVersion Model available for other files (will also create a table)
-module.exports = User; */
+/* Makes the UserSequelizeVersion Model available for other files (will also create a table) */
+module.exports = User; 
