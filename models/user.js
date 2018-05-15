@@ -21,12 +21,12 @@ var User = connection.define("user", {
 
  */
 
-connection.sync().then(function() {
+/*connection.sync().then(function() {
     User.create( {
       email: "someone@gmail.com",
       password: "pwd123"
     });
-  });
+  }); */
 
 /* Makes the UserSequelizeVersion Model available for other files (will also create a table)
 module.exports = User; */
