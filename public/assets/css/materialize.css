@@ -2124,7 +2124,7 @@
 }
 
 .white {
-  background-color: #FFFFFF !important;
+  background-color: black ;
 }
 
 .white-text {
@@ -4284,6 +4284,8 @@ nav.nav-extended {
 nav.nav-extended .nav-wrapper {
   min-height: 56px;
   height: auto;
+   background-color: black;
+
 }
 
 nav.nav-extended .nav-content {
@@ -4307,6 +4309,7 @@ nav i.material-icons {
 nav .nav-wrapper {
   position: relative;
   height: 100%;
+
 }
 
 @media only screen and (min-width: 993px) {
@@ -4478,6 +4481,7 @@ nav .input-field label.active i {
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 64px;
     line-height: 64px;
+
   }
   .navbar-fixed {
     height: 64px;
