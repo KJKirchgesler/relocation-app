@@ -18,6 +18,7 @@
   "homepage": "https://github.com/KJKirchgesler/relocation-app#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "eventful-node": "^1.1.1",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "materialize-css": "^1.0.0-rc.1",
