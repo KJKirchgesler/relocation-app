@@ -1,4 +1,6 @@
 var db = require("../models");
+var eventful = require("eventful-node");
+var client2 = new eventful.Client("ZRp8PtrTPMPHFLQN");
 
 module.exports = function(app) {
   app.get("/api/users", function(req, res) {
@@ -42,4 +44,21 @@ module.exports = function(app) {
     });
   });
 
+   app.get("/api/eventful/:location", function(req,res){
+    client2.searchEvents({ location: req.params.location }, function(err, data){
+      if(err){
+      
+        return console.error(err);
+      
+      }
+      // console.log(data);
+      // console.log('Recieved ' + data.search.total_items + ' events');
+      // console.log('Event listings:  ');
+      // console.log(data.search.events.event)
+      
+      //print the title of each event
+      res.json(data.search.events.event)
+    });
+  });
 };
+

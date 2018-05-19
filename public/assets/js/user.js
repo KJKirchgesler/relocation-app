@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     // Calling the upsertAuthor function and passing in the value of the name input
     upsertUser({
-      userName: unameInput.trim(),
+      username: unameInput.trim(),
       email: emailInput.trim(),
       password: pswdInput
         .trim()
