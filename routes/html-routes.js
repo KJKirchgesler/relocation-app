@@ -35,4 +35,8 @@ module.exports = function(app) {
   app.get("/results", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/results.html"));
   });
+  // results route loads registration.html
+  app.get("/registration", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/assets/registration.html"));
+  });
 };
