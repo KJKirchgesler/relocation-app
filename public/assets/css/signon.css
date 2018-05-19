@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+a:link { 
+    color: #000000; 
+}
+
+.lnk:hover { 
+    color: #ffffff;
+    background: #92bde7; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+a:link { 
+	color: #000000; 
+}
+
+.grbrand {
+    text-align: center;
+}
+
+.grbrand span {
+    color: #ffffff;
+}
+
+.grwrapper {
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+
+.grwrapper > *{
+    padding: 1em;
+}
+
+.grinfo {
+    background: #c9e6ff;
+}
+
+.grinfo h3, .grinfo ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.signon {
+    background: #f9feff;
+}
+
+.signon form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.signon form label {
+    display: block;
+}
+
+.signon form p {
+    margin: 0;
+}
+
+.signon form .full {
+    grid-column: 1 / 3;
+}
+.signon form button, .signon form input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+
+.signon form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.signon form button:hover,.signon form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+
+@media(min-width: 700px) {
+    .grwrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .grwrapper{
+        padding: 2em;
+    }
+    .grinfo h3, .grinfo ul, .grbrand {
+        text-align: left;
+    }
+}
