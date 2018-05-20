@@ -1,2 +1,2 @@
 # relocation-app
-Relocation app where users can search by city and state, find data about the city and also find reviews by other users who have relocated there. Users also also enter their own reviews. 
+Voyager! An app for travelers and nomads. Users can search by city and state and find events around them. Users can also enter their own reviews and see other users reviews of the city they're in.
