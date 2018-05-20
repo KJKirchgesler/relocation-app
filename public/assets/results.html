@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Voyager | LOGIN </title>
-   <!--Import Google Icon Font-->
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -13,94 +13,116 @@
   <link href="css/relocation_style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
- <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-
-
 <body>
-   <nav>
+  <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Voyager</a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect waves-light btn" href="home.html">Home<i class="material-icons right">home</i></a></li></a></li>
-        <li><a class="waves-effect waves-light btn" href="blog.html">Blog<i class="material-icons right">mode_edit</i></a></li>
-         <li><a class="waves-effect waves-light btn" href="results.html">Results<i class="material-icons right">view_list</i></a></li>
-         <li><a class="waves-effect waves-light btn" href="profile.html">Profile<i class="material-icons right">person</i></a></li>
-         <li><a class="waves-effect waves-light btn">Login<i class="material-icons right">person_add</i></a></li>
-       
+        <li>
+          <a class="waves-effect waves-light btn" href="home.html">Home
+            <i class="material-icons right">home</i>
+          </a>
+        </li>
+        </a>
+        </li>
+        <li>
+          <a class="waves-effect waves-light btn" href="blog.html">Blog
+            <i class="material-icons right">mode_edit</i>
+          </a>
+        </li>
+        <li>
+          <a class="waves-effect waves-light btn" href="results.html">Explore
+            <i class="material-icons right">view_list</i>
+          </a>
+        </li>
+        <li>
+          <a class="waves-effect waves-light btn" href="profile.html">Profile
+            <i class="material-icons right">person</i>
+          </a>
+        </li>
+        <li>
+          <a class="waves-effect waves-light btn">Login
+            <i class="material-icons right">person_add</i>
+          </a>
+        </li>
+
       </ul>
     </div>
   </nav>
-  
- <ul id="nav-mobile" class="sidenav">
-        <li>
-          <a href="profile.html">Profile</a>
-          <a href="home.html">Home</a>
-          <a href="blog.html">Blog</a>
-          <a href="results.html">Results</a>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
+
+  <ul id="nav-mobile" class="sidenav">
+    <li>
+      <a href="profile.html">Profile</a>
+      <a href="home.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="results.html">Explore</a>
+  </ul>
+  <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+    <i class="material-icons">menu</i>
+  </a>
+  </div>
   </nav>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
+        <br>
+        <br>
         <h1 class="header center white-text text-lighten-2">Explore Your Options</h1>
         <div class="row center">
-          <h5 class="header white-text col s12 light"><strong>Never Settle for less</strong></h5>
+          <h5 class="header white-text col s12 light">
+            <strong>Never Settle for less</strong>
+          </h5>
         </div>
         <div class="row center">
           <a href="profile.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">New Search</a>
         </div>
-        <br><br>
-      
-        <br><br>
+        <br>
+        <br>
+
+        <br>
+        <br>
 
       </div>
     </div>
-    <div class="parallax"><img src="img/city.jpg" alt="city"></div>
-
+    <div class="parallax">
+      <img src="img/city.jpg" alt="city">
+    </div>
   </div>
-
- 
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m12">
           <br>
-            <div class="row center">
-                <div class="results">
-                    <div class="resultsDisplay">
-                        <h4>Go Here Do This</h4>
-                        <ul id="results"></ul>
-                        <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Search events in...</label>
-        </div>
-      </div>
-      <button class="btn waves-effect waves-light" id="submitBtn" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-    </form>
-  </div>
-   <div id="cardSpot">
-  </div>
-
+          <div class="row center">
+            <div class="results">
+              <div class="resultsDisplay">
+                <h2>Go here. Do this.</h2>
+                <ul id="results"></ul>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Search events in...</label>
+                      </div>
                     </div>
+                    <button class="btn waves-effect waves-light" id="submitBtn" type="submit" name="action">Submit
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </form>
                 </div>
+                <div id="cardSpot">
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
       </div>
     </div>
@@ -110,29 +132,33 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light"><strong>TAKE A CHANCE</strong></h5>
+          <h5 class="header col s12 light">
+            <strong>TAKE A CHANCE</strong>
+          </h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/RvFollow.jpg" alt="picture"></div>
+    <div class="parallax">
+      <img src="img/RvFollow.jpg" alt="picture">
+    </div>
   </div>
 
- <footer class="page-footer teal">
+  <footer class="page-footer teal">
     <div class="container">
       <div class="row- center">
         <div class="col l6 s12">
           <h5 class="white-text">About Us</h5>
-          <p class="grey-text text-lighten-4">Our team is composed of brilliant, driven people with an authentic passion for travel and a committment to bridging cultures. Collectively, we've traveled all over the country. Together, we strive to enable other voyagers, cultural exchange, community-building and exploration worldwide by empowering people to share experiences with others. We believe that by exploring the world, we can make it a better place</p>
-
-
+          <p class="grey-text text-lighten-4">Our team is composed of brilliant, driven people with an authentic passion for travel and a committment to bridging
+            cultures. Collectively, we've traveled all over the country. Together, we strive to enable other voyagers, cultural
+            exchange, community-building and exploration worldwide by empowering people to share experiences with others.
+            We believe that by exploring the world, we can make it a better place</p>
         </div>
-      
-        
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="">Kevin Beeler,  Kristan Kirchgesler,  Anna Wolf,  Renee Boyd,  Shaela Sterling</a>
+        Made by
+        <a class="brown-text text-lighten-3" href="">Kevin Beeler, Renee Boyd, Kristen Kirchgesler, Shaela Sterling, Anna Wolf</a>
       </div>
     </div>
   </footer>
@@ -142,18 +168,16 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  
-  
-  <script src="js/results.js"  type="text/javascript" ></script>
+  <script src="js/results.js" type="text/javascript"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-   <script>
-    $("#submitBtn").click(function(event){
+  <script>
+    $("#submitBtn").click(function (event) {
       event.preventDefault();
       var userLocation = $("#textarea1").val()
       console.log(userLocation)
-      $.get("/api/eventful/" + userLocation).done(function(events){
-        events.forEach(function(v) {
+      $.get("/api/eventful/" + userLocation).done(function (events) {
+        events.forEach(function (v) {
 
           var title = v.title
           var start_time = v.start_time
@@ -172,26 +196,27 @@
       })
     })
 
-    var createCard = function(title, start, description, name, url) {
+    var createCard = function (title, start, description, name, url) {
       var html = '<div class="row">' +
         '<div class="col s12 m6">' +
-          '<div class="card blue-grey darken-1">' +
-            '<div class="card-content white-text">' +
-              '<span class="card-title">'+ title + '</span>' +
-              '<p>' + description +  '</p>' +
-              '<p>' + start + '</p>' +
-              '<p>' + name + '</p>' +
-            '</div>' +
-            '<div class="card-action">' +
-              '<a href="#">' + url  +  '</a>' +
-            '</div>' +
-          '</div>' +
+        '<div class="card blue-grey darken-1">' +
+        '<div class="card-content white-text">' +
+        '<span class="card-title">' + title + '</span>' +
+        '<p>' + description + '</p>' +
+        '<p>' + start + '</p>' +
+        '<p>' + name + '</p>' +
         '</div>' +
-      '</div>")';
+        '<div class="card-action">' +
+        '<a href="#">' + url + '</a>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>")';
 
-    return $(html);
+      return $(html);
     }
   </script>
 
-  </body>
+</body>
+
 </html>
