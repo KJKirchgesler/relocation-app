@@ -1,8 +1,11 @@
 $(document).ready(function(){
     $('.modal').modal();
-  
   });
   
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+
   $(document).ready(function() {
     // Adding event listeners to the form to create a new object, and the button to delete
     // an User
@@ -19,6 +22,7 @@ $(document).ready(function(){
       var unameInput = $("#userName").val();
       var emailInput = $("#email").val();
       var pswdInput = $("#password").val();
+      $('form :input').val('');
   
       console.log({
         userName: unameInput.trim(),
