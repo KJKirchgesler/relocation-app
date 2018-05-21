@@ -1,6 +1,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var redis   = require("redis");
+var client  = redis.createClient();
 
 // Sets up the Express App
 // =============================================================
@@ -10,6 +12,7 @@ var app = express();
 //adding dependencies for authentication middleware
 var passport   = require('passport')
 var session    = require('express-session')
+var RedisStore = require('connect-redis')(session);
 var env = require('dotenv').load()
 
 // Requiring our models for syncing
@@ -26,7 +29,7 @@ app.use(bodyParser.json());
 
 // For Passport
  
-app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+app.use(session({ store: new RedisStore({ host: 'localhost', port: 6379, client: client,ttl :  260}), secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
  
 app.use(passport.initialize());
  
