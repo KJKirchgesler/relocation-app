@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Komplex#07",
+    "password": "SQLSterling0220",
     "database": "relocation_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
