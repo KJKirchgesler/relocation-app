@@ -7,6 +7,11 @@ var path = require("path");
 var PORT = process.env.PORT || 8080;
 var app = express();
 
+//adding dependencies for authentication middleware
+var passport   = require('passport')
+var session    = require('express-session')
+var env = require('dotenv').load()
+
 // Requiring our models for syncing
 var db = require("./models/index");
 
@@ -18,6 +23,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/json
 app.use(bodyParser.json());
+
+// For Passport
+ 
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+ 
+app.use(passport.initialize());
+ 
+app.use(passport.session()); // persistent login sessions
 
 // Set Handlebars. 
 var exphbs = require("express-handlebars");
@@ -35,6 +48,10 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
 require("./routes/post-api-routes.js")(app);
+
+//load passport strategies
+//==================================================================
+require('./config/passport/passport.js')(passport, db.user);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
